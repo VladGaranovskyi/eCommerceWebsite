@@ -1,0 +1,56 @@
+.newsletter{
+    display: flex;
+    width: 100%;
+    height: 22.5rem;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: multiply, multiply, normal;
+    background: #F2F4F6;
+    padding: 5.9375rem 2rem;
+
+    @media ($projector) {
+        padding: 0;
+        background: url(../images/news.png), lightgray -292.163px -118px / 52.368% 174.224% no-repeat, url(../images/news.png), lightgray 993.038px -99.667px / 69.005% 184.103% no-repeat, #F2F4F6;
+        background-size: cover;
+    }
+
+    &-content{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        &-header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+
+            &__title{
+                color: $neutral7;
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                /* Headline 6 */
+                font-family: $primaryFont;
+                font-size: 1.75rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 2.125rem; /* 121.429% */
+                letter-spacing: -0.0375rem;
+
+                @media ($tablet) {
+                    @include h4($color: $neutral7);
+                }
+            }
+
+            &__desc{
+                @include pRegular();
+
+                @media ($tablet) {
+                    @include pRegular($font-size: 1.125rem);
+                }
+            }
+        }
+    }
+}

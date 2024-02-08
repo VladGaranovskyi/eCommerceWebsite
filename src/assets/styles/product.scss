@@ -1,0 +1,11 @@
+@import './pages/product';
+
+.linkgroup{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @media (min-width: 1024px) {
+        margin-left: 10rem;
+    }
+}

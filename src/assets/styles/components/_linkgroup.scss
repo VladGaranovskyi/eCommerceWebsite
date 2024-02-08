@@ -1,0 +1,18 @@
+.linkgroup{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1rem;
+
+    &-previous{
+        @include buttonXSmall($color: $neutral4);
+    }
+    &-last{
+        @include buttonXSmall();
+    }
+}
+
+.link-collection{
+    @include buttonSmall();
+    border-bottom: 1px solid $neutral7;
+    text-decoration: none;
+}

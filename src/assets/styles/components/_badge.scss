@@ -1,0 +1,24 @@
+.badge-new{
+    border-radius: 0.25rem;
+    background: #FFF;
+    padding: 0.25rem 0.875rem;
+    text-align: center;
+    @include pBold($font-size: 1rem);
+    box-shadow: 0px 16px 24px 16px rgba(0, 0, 0, 0.1);
+}
+
+.badge-discount{
+    border-radius: 0.25rem;
+    background: #38CB89;
+    padding: 0.25rem 0.875rem;
+    text-align: center;
+    @include pBold($font-size: 1rem, $color: $neutral1);
+    box-shadow: 0px 16px 24px 16px rgba(0, 0, 0, 0.1);
+}
+
+.badges-card{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}

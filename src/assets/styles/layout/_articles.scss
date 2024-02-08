@@ -1,0 +1,36 @@
+.blog{
+    display: flex;
+    width: 100%;
+    padding: 2.5rem 2rem;  
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+
+    @media ($projector) {
+        padding: 5rem 10rem;
+    }
+
+    .title{
+        margin-top: 0;
+        padding: 0;
+    }
+
+    &-articles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+
+        @media ($desktop) {
+            gap: 1.5625rem;
+            flex-direction: row;
+        }
+
+        @media ($projector) {
+            flex-wrap: nowrap;
+        }
+    }
+}

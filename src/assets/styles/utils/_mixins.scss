@@ -1,0 +1,191 @@
+@mixin h1($color: $primaryColor) {
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $primaryFont;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 5.25rem; /* 105% */
+    letter-spacing: -0.1875rem;
+    margin-bottom: 1rem;
+}
+
+@mixin h2($color: $primaryColor) {
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $primaryFont;
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.75rem; /* 105.556% */
+    letter-spacing: -0.125rem;
+    margin-bottom: 1rem;
+}
+
+@mixin h3($color: $primaryColor) {
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $primaryFont;
+    font-size: 3.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.625rem; /* 107.407% */
+    letter-spacing: -0.0625rem;
+    margin-bottom: 1rem;
+}
+@mixin h4($color: $primaryColor) {
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $primaryFont;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.75rem; /* 110% */
+    letter-spacing: -0.025rem;
+}
+@mixin h5($color: $primaryColor) {
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $primaryFont;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.375rem; /* 111.765% */
+    letter-spacing: -0.0375rem;
+}
+@mixin h7($color: $primaryColor) {
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    font-family: $primaryFont;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem; 
+}
+@mixin pRegular($color: $primaryColor, $font-size: 0.875rem){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $secondaryFont;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: $font-size + 0.75rem;
+}
+
+@mixin pMedium($color: $primaryColor, $font-size: 0.875rem){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $secondaryFont;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 600;
+    line-height: $font-size + 0.75rem;
+}
+
+@mixin pBold($color: $primaryColor, $font-size: 0.875rem){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: $secondaryFont;
+    font-size: $font-size;
+    font-style: normal;
+    font-weight: 700;
+    line-height: $font-size + 0.75rem;
+}
+
+@mixin buttonXLarge($color: $primaryColor){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Button XL */
+    font-family: $secondaryFont;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.375rem; /* 146.154% */
+}
+
+@mixin buttonLarge($color: $primaryColor){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Button XL */
+    font-family: $secondaryFont;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.125rem; /* 154.545% */
+}
+
+@mixin buttonMedium($color: $primaryColor){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Button XL */
+    font-family: $secondaryFont;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem; /* 177.778% */
+    letter-spacing: -0.025rem;
+}
+
+@mixin buttonSmall($color: $primaryColor){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Button XL */
+    font-family: $secondaryFont;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem; /* 175% */
+    letter-spacing: -0.025rem;
+}
+
+@mixin buttonXSmall($color: $primaryColor){
+    color: $color;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    /* Button XL */
+    font-family: $secondaryFont;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 171.429% */
+}
+
+@mixin headerActive(){
+    color: $neutral7;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Button/XSmall */
+    font-family: $headerFont;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 171.429% */
+}
+
+@mixin headerInactive(){
+    color: $neutral4;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Button/XSmall */
+    font-family: $headerFont;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem; /* 171.429% */
+}
+
+@mixin buttonArrow($radius: 3.25rem){
+    display: flex;
+    width: $radius;
+    height: $radius;
+    padding: 0.625rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
+    border: none;
+}

@@ -1,0 +1,28 @@
+input[type="radio"]{
+    &:checked{
+        accent-color: $primaryColor;
+    }
+}
+
+input[type="checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+    border: 0.09rem solid rgb(108, 114, 117);
+    border-radius: 0.25rem;
+    background: rgb(252, 252, 253);
+    &:checked{
+        accent-color: $primaryColor;
+    }
+}
+
+.value-check{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    label{
+        @include pMedium();
+        text-align: right;
+    }
+}

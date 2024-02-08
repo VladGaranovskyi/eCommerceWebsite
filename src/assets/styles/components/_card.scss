@@ -1,0 +1,205 @@
+.card {
+    display: block;
+    width: 14.4375rem;
+    height: 19.25rem;
+    background: lightgray 50% / contain no-repeat, #F3F5F7;
+    background-blend-mode: multiply, normal;
+    position: relative;
+    margin-bottom: 5.25rem;
+    margin-top: 2rem;
+
+    @media ($tablet) {
+        width: 16.375rem;
+        height: 21.8125rem;
+        background: lightgray 50% / contain no-repeat, $neutral2;
+        background-blend-mode: multiply, normal;
+    }
+
+    // &-img{
+    //     top: 0;
+    //     left: 0;
+    //     position: absolute;
+    //     width: 14.4375rem;
+    //     height: 16.25rem;
+    // }
+
+    .badges-card{       
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .button-favourite{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .button-card{
+        margin-top: 65%;
+        margin-left: 12%;
+        padding: 0.5rem 1.5rem;
+        @media ($tablet) {
+            margin-left: 15%;
+            margin-top: 70%;
+        }
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        align-self: stretch;
+        position: absolute;
+        top: 20.8125rem;
+
+        @media ($tablet) {
+            top: 22.8125rem;
+        }
+
+        &__title{
+            @include pMedium($font-size: 1rem);
+        }
+        
+        &__price{
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+
+            &__discount{
+                @include pMedium();
+            }
+
+            &__original{
+                text-decoration-line: line-through;
+                @include pMedium($color: $neutral4);
+            }
+        }
+    }
+}
+
+.card-featured{
+    background: lightgray -14.595px 83px / 103.262% 85.223% no-repeat, $neutral2;
+    background-blend-mode: multiply, normal;
+    width: 19.4375rem;
+    height: 23.5625rem;
+    flex-shrink: 0;
+
+    &__title{
+        @include h5();
+        margin-left: 3rem;
+        padding-top: 3rem;
+    }
+
+    .link-collection{
+        margin-left: 3rem;
+        padding-top: 6.38rem;
+    }
+
+    @media ($desktop) {
+        width: 34.25rem;
+        height: 41.5rem;
+    }
+}
+
+.card-featured-landscape{
+    background:  lightgray 148.808px -1.033px / 58.778% 100.578% no-repeat, #F3F5F7;
+    background-blend-mode: multiply, normal;
+    width: 19.4375rem;
+    height: 11.25rem;
+    flex-shrink: 0;
+
+    &__title{
+        @include h5();
+        margin-left: 2rem;
+        padding-top: 5.13rem;
+        @media ($desktop) {
+            padding-top: 12.56rem;
+        }
+    }
+
+    .link-collection{
+        margin-left: 2rem;
+        padding-top: 15.94rem;
+    }
+    @media ($desktop) {
+        width: 34.25rem;
+        height: 19.9375rem;
+        background: lightgray 199.761px -31.571px / 66.009% 112.951% no-repeat, $neutral2;
+        background-blend-mode: multiply, normal;
+    }
+}
+
+.card-service{
+    background: $neutral2;
+    display: flex;
+    width: 9.5rem;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    @media ($desktop) {
+        width: 16.375rem;
+        padding: 3rem 2rem;
+    }
+
+    @media (max-width: 375px) {
+        width: 8rem;
+    }
+
+    &-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+        @media ($desktop) {
+            gap: 0.5rem;
+        }
+
+        &__title{
+            @include pRegular($color: $neutral7);
+        }
+
+        &__description{
+            @include pRegular($color: $neutral4);
+        }
+    }
+}
+
+.card-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    width: 100%;
+    gap: 1.5rem;
+    @media ($desktop) {
+        width: auto;
+        align-items: flex-start;
+    }
+    
+    img{
+        width: 19.4375rem;
+        height: 17.6875rem;
+        flex-shrink: 0;
+        background: lightgray 50% / cover no-repeat;
+
+        @media ($projector) {
+            width: 22.3125rem;
+            height: 20.3125rem;
+        }
+    }
+
+    &-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        &__text{
+            @include h7();
+        }
+    }
+}

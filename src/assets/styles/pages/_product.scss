@@ -1,0 +1,14 @@
+.product{
+    display: block;
+    width: 100%;
+    padding: 0rem 10rem;
+
+    &-{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5.25rem;
+    }
+}

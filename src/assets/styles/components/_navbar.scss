@@ -1,0 +1,81 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    @media ($desktop) {
+        padding: 1rem 10rem;
+    }
+
+    &__left{
+        display: flex;
+        align-items: flex-start;
+        gap: 0.25rem;
+        flex-shrink: 0;
+
+        &__menu{
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            flex-shrink: 0;
+    
+            @media ($tablet) {
+                display: none;
+            }
+        }
+    
+        &__logo{
+            color: $primaryColor; 
+            text-align: center;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: $primaryFont;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5rem; /* 100% */
+        }
+    }
+
+    &__headers{
+        display: none;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+
+        &-active{
+            @include buttonXSmall();
+        }
+        &-inactive{
+            @include buttonXSmall($color: $neutral4);
+        }
+
+        @media ($tablet) {
+            display: flex;
+        }
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1rem;
+        &_search{
+            display: none;
+
+            @media ($tablet) {
+                display: inline-block;
+            }
+        }
+
+        &_profile{
+            display: none;
+
+            @media ($tablet) {
+                display: inline-block;
+            }
+        }
+    }
+}
