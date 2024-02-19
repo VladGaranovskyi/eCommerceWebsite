@@ -9,11 +9,11 @@ Download or clone this repository. Run `npm install` through the terminal (NodeJ
 Html files are located in `src` folder.
 
 List of available commands:
-- npm run dev: src/index.html
-- npm run kit: src/uikit.html
-- npm run shop: src/shop.html
-- npm run signup: src/signup.html
-- npm run signin: src/signin.html 
-- npm run product: src/product.html
+- `npm run dev`: src/index.html
+- `npm run kit`: src/uikit.html
+- `npm run shop`: src/shop.html
+- `npm run signup`: src/signup.html
+- `npm run signin`: src/signin.html 
+- `npm run product`: src/product.html
 
 To stop developer mode in the terminal press Ctrl+C.
