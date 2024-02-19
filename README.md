@@ -21,3 +21,5 @@ To stop developer mode in the terminal press Ctrl+C.
 ![Shop](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s1.png)
 ![Sign Up](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s2.png)
 ![Main](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s3.png)
+
+<img src="https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s1.png" width="400px" height="300px"> 
