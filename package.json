@@ -1,7 +1,6 @@
 {
-    "name": "wwwtemplate",
+    "name": "EcommerceShopPrototype",
     "version": "1.0.0",
-    "description": "Стартовый проект для сборки и разработки веб-макетов и UI Kit к ним.",
     "scripts": {
         "dev": "parcel src/index.html --open",
         "kit": "parcel src/uikit.html --open",
