@@ -18,6 +18,6 @@ List of available commands:
 
 To stop developer mode in the terminal press Ctrl+C.
 
-![Shop](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s1.png?raw=true)
-![Sign Up](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s2.png?raw=true)
-![Main](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s3.png?raw=true)
+![Shop](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s1.png?sanitize=true)
+![Sign Up](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s2.png?sanitize=true)
+![Main](https://github.com/VladGaranovskyi/eCommerceWebsite/tree/main/s3.png?sanitize=true)
