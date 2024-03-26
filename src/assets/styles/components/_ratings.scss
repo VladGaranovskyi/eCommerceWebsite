@@ -1,0 +1,20 @@
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.83rem;
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.17rem;
+
+    }
+
+    p{
+        @include pRegular($color: $neutral7, $font-size: 0.75rem);
+    }
+}
